@@ -1,0 +1,35 @@
+﻿@{
+    Layout = null;
+}
+
+<h4>@ViewBag.events.Name</h4>
+<p>Registration submitted on @ViewBag.Attendee.RegisterCompleteDate.ToShortDateString() by @ViewBag.Attendee.ProxyUser</p>
+
+<p>
+    
+   
+
+        
+          
+            <h4>Registration Data</h4>
+            @foreach (var registration in @ViewBag.registrations)
+            {
+                <div><b>@registration.ReportDataName</b>: @registration.Value</div>
+            }
+    <br />
+    <hr />
+            @if (@ViewBag.guests.Count > 0)
+            { <div>Guest(s)</div> }
+           
+            @foreach (var guest in @ViewBag.guests)
+            {
+                <div>@guest.FirstName @guest.LastName</div>
+                <div>@guest.Comments</div>
+            }
+        
+
+    
+
+
+
+</p>

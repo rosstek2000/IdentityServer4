@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="Default Web Site/ALPAIdentityServerDev" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Projects\\ALPAIdentityServer\\ALPAIdentityServer\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Projects\\ALPAIdentityServer\\ALPAIdentityServer\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="AIROConnection-Web.config Connection String" description="" value="Server=APTIFYDEV\APTIFYCONV;Initial Catalog=APTIFY;User ID=SA;Password=*ALPA@apt" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Projects\\ALPAIdentityServer\\ALPAIdentityServer\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AIROConnection']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Server=CMDEVSQL;Initial Catalog=EventManagerDev;User ID=ALPAEvents;Password=Aevt**gen" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Projects\\ALPAIdentityServer\\ALPAIdentityServer\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>
